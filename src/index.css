@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .mycontainer {
+      @apply container px-40 py-16 mx-auto;
+    }
+  }
+
+  @keyframes moveGradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 100%;
+    }
+  }
+  
+  .moving-gradient {
+    background: linear-gradient(to bottom, rgba(0, 163, 255, 0.3), rgba(0, 163, 255, 0));
+    background-size: 100% 200%; 
+    animation: moveGradient 5s linear infinite;
+  }
+  
